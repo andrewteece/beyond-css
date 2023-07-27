@@ -29,6 +29,7 @@ body {
 }
 .btn__accent {
   background: hsl(45, 82%, 65%);
+  color: black;
 }
 .btn__accent:hover, .btn__accent:focus {
   background: hsl(45, 82%, 45%);
