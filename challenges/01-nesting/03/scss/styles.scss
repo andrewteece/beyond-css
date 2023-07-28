@@ -46,6 +46,14 @@ section {
   text-decoration: none;
   text-transform: uppercase;
   // your code here
+  background: white;
+  color: black;
+
+  &:hover {
+    background: transparent;
+    color: white;
+    outline: 2px solid white;
+  }
 }
 
 .text-subdued {
