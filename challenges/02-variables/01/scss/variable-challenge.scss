@@ -2,7 +2,7 @@
 
 $clr-light: #f8f7f7;
 $clr-dark: #201e1f;
-$clr-med: #da3f0b;
+$clr-red: #da3f0b;
 
 * {
   box-sizing: border-box;
@@ -13,6 +13,8 @@ body {
   font-size: 1.75rem;
   font-family: system-ui, sans-serif;
   line-height: 1.6;
+  background-color: $clr-light;
+  color: $clr-dark;
 
   /* this is being used to center the content on the screen */
   display: grid;
@@ -25,12 +27,35 @@ body {
   gap: 0.75em;
   width: min(90%, 60rem);
   padding: 2em;
+  box-shadow: 0 0 1rem $clr-dark;
+
+  &__title {
+    color: $clr-red;
+  }
 }
 
 .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
   text-decoration: none;
+  border: 3px solid $clr-red;
+  border-radius: 6px;
+
+  &--primary {
+    background: $clr-red;
+    color: $clr-light;
+  }
+
+  &--outline {
+    background: $clr-light;
+    color: $clr-red;
+  }
+  &:hover,
+  &:focus {
+    background: $clr-dark;
+    color: $clr-light;
+    box-shadow: 0 0 2rem $clr-red;
+  }
 }
 
 .flex-group {
